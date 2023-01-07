@@ -39,7 +39,7 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
          * This class has many constructors, it is very important
          * that you give each item a unique id.
          */
-        SlimefunItemStack slimefunItem = new SlimefunItemStack("COOL_DIAMOND", Material.DIAMOND, "&4Cool Diamond", "&c+20% Coolness");
+        SlimefunItemStack slimefunItem = new SlimefunItemStack("EXAMPLE_ITEM", Material.DIAMOND, "&4Example Item", "&c+20% Testing Purposes");
 
         /*
          * 3. Creating a Recipe
@@ -57,7 +57,7 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
          * which this item is crafted in.
          * Recipe Types from Slimefun itself will automatically add the recipe to that machine.
          */
-        SlimefunItem item = new SlimefunItem(itemGroup, slimefunItem, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+        SlimefunItem item = new SlimefunItem(itemGroup, slimefunItem, RecipeType.CRAFTING_TABLE, recipe);
         item.register(this);
     }
 
